@@ -16,7 +16,6 @@ app.get("/calc/:num1/:num2", function(req,res){
 // })
 
 app.get('/calcquery/:num1/:num2', (req, res) => {
-    // res.json({params:req.params, query:req.query})
     let num1 = Number(req.params.num1);
     let num2 = Number(req.params.num2);
     const operation = req.query.operation.toLowerCase();

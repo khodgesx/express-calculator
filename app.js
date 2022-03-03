@@ -19,7 +19,7 @@ app.get('/calcquery/:num1/:num2', (req, res) => {
     // res.json({params:req.params, query:req.query})
     let num1 = Number(req.params.num1);
     let num2 = Number(req.params.num2);
-    let operation = req.query.operation.toLowerCase()
+    const operation = req.query.operation.toLowerCase();
     let result;
     if (operation === "add") {
         result = num1 + num2;

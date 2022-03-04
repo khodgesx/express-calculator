@@ -31,12 +31,12 @@ app.get('/calcquery/:num1/:num2', (req, res) => {
     } else if (operation === "exponent") {
         result = num1 ** num2;
     }
-    res.send(`The result is ${result}`)
+    res.send(`The result is ${result}`);
 });
 
 
 app.listen(PORT, () => {
-    console.log(`app is running on port:  ${PORT}`)
+    console.log(`app is running on port:  ${PORT}`);
 })
 
 
